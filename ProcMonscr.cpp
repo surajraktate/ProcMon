@@ -161,7 +161,7 @@ BOOL ProcessInfo::ProcessLog()
 
 	GetLocalTime(&lt);
 
-	sprintf_s(FileName,".//%02d_%02d_%02d %s.txt",lt.wHour,lt.wMinute,lt.wDay,month[lt.wMonth-1]);
+	sprintf_s(FileName,"C://%02d_%02d_%02d %s.txt",lt.wHour,lt.wMinute,lt.wDay,month[lt.wMonth-1]);
 	fp=fopen(FileName,"wb");
 	if(fp==NULL)
 	{
@@ -239,7 +239,7 @@ BOOL ProcessInfo::ReadLog(DWORD hr,DWORD min,DWORD date,DWORD month)
 	int ret=0,count=0;
 	LOGFILE fobj;
 	FILE *fp;
-	sprintf_s(FileName,".//%02d_%02d_%02d %s.text",hr,min,date,montharr[month-1]);
+	sprintf_s(FileName,"C://%02d_%02d_%02d %s.text",hr,min,date,montharr[month-1]);
 	fp=fopen(FileName,"rb");
 	if(fp==NULL)
 	{
@@ -346,11 +346,11 @@ BOOL HardwareInfo()//Hardware Explorer
 
 void  DisplayHelp()
 {
-	cout<<"Developed by Marvellous Infosystems"<<endl;
-	cout<<"ps	  : Display of Information of Process"<<endl;
+	cout<<"Process Monitoring System"<<endl;
+	cout<<"ps     : Display of Information of Process"<<endl;
 	cout<<"ps-t   : Display all Information about threads"<<endl;
 	cout<<"ps-d   : Dispaly all Inforrmation about DLL"<<endl;
-	cout<<"cls	  : Clear the contents on condole"<<endl;
+	cout<<"cls    : Clear the contents on condole"<<endl;
 	cout<<"log    : Creates log of currrent running process on C drive"<<endl;
 	cout<<"readlog: Display  the information from specified log file"<<endl;
 	cout<<"sysinfo: Display the current hardware configuration"<<endl;
