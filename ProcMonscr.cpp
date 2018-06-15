@@ -1,4 +1,22 @@
-#include "header.h"
+#include<iostream>
+using namespace std;
+#include<stdlib.h>
+#include<stdlib.h>
+#include<string.h>
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<iostream>
+#include<windows.h>
+#include<tlhelp32.h>
+#include<io.h>
+ 
+typedef struct LogFile
+{
+	char ProcessName[100];
+	unsigned int pid;
+	unsigned int ppid;
+	unsigned int thread_cnt;
+}LOGFILE;
 class Threadinfo//To display Thread Information
 {
    private:
