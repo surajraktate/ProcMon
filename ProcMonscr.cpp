@@ -292,7 +292,7 @@ BOOL ProcessInfo::killProcess(char* name)
 	BOOL bret;
 	HANDLE hProcess;
 	if(Process32First(hProcessSnap,&pe32))
-	{
+	{ 
 		CloseHandle(hProcessSnap);
 	    return FALSE;
 	}
