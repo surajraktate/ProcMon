@@ -1,6 +1,6 @@
 # ProcMon
 Process Monitoring System on windows.
-This is a search based application from sysinternel tools of windows
+This is a research based application from sysinternel tools of windows
 
 
 This application is command based so you have to read about command accepted by this application.
